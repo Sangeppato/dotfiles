@@ -30,5 +30,6 @@ set statusline+=\ %F
 set statusline+=\ %r%m
 set statusline+=%=
 set statusline+=%y
-set statusline+=%4p%%
-set statusline+=%4l,%c\ 
+set statusline+=%8l,%c
+set statusline+=%8p%%
+set statusline+=\ 
