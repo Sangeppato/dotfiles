@@ -6,6 +6,7 @@ set cursorline
 set autoindent
 set smartindent
 set mouse=a
+colorscheme desert
 
 " --- Tab ---
 set tabstop=4
@@ -23,7 +24,7 @@ nnoremap <leader>l :set relativenumber!<CR>
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 nnoremap <silent> <leader><Space> @=(foldlevel('.')?'zA':"\<Space>")<CR>
 
-" --- Status Line ---
+" --- Statusline ---
 set laststatus=2
 set statusline=
 set statusline+=\ %F
@@ -35,13 +36,10 @@ set statusline+=%8p%%
 set statusline+=\ 
 
 " --- Colors ---
-
-colorscheme desert
-
-hi CursorLine ctermfg=none ctermbg=234 cterm=none
-hi StatusLine ctermfg=White ctermbg=238 cterm=none
-hi TabLineFill ctermfg=none ctermbg=none cterm=none
-hi TabLine ctermfg=White ctermbg=238 cterm=none
-hi TabLineSel ctermfg=238 ctermbg=White	cterm=none
-hi LineNr ctermfg=238
-hi clear SignColumn
+highlight CursorLine ctermfg=none ctermbg=none cterm=none
+highlight StatusLine ctermfg=White ctermbg=238 cterm=none
+highlight TabLineFill ctermfg=none ctermbg=none cterm=none
+highlight TabLine ctermfg=White ctermbg=238 cterm=none
+highlight TabLineSel ctermfg=238 ctermbg=White	cterm=none
+highlight LineNr ctermfg=238
+highlight clear SignColumn
