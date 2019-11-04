@@ -2,10 +2,10 @@ filetype on
 syntax on
 set number
 set ruler
+set cursorline
 set autoindent
 set smartindent
 set mouse=a
-colorscheme desert
 
 " --- Tab ---
 set tabstop=4
@@ -33,3 +33,15 @@ set statusline+=%y
 set statusline+=%8l,%c
 set statusline+=%8p%%
 set statusline+=\ 
+
+" --- Colors ---
+
+colorscheme desert
+
+hi CursorLine ctermfg=none ctermbg=234 cterm=none
+hi StatusLine ctermfg=White ctermbg=238 cterm=none
+hi TabLineFill ctermfg=none ctermbg=none cterm=none
+hi TabLine ctermfg=White ctermbg=238 cterm=none
+hi TabLineSel ctermfg=238 ctermbg=White	cterm=none
+hi LineNr ctermfg=238
+hi clear SignColumn
