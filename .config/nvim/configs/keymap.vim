@@ -1,13 +1,11 @@
 " === KEYMAP ===
 
-
 let mapleader=","
+
 nnoremap <leader>l :set relativenumber!<CR>
-nnoremap <leader>e :NERDTreeToggle<CR>
-nnoremap <leader>\ :NERDTreeToggle<CR>
 noremap <silent> <F5> :set list!<CR>
 
-" Switch tabs
+" Tabs
 nnoremap H gT
 nnoremap L gt
 
@@ -15,8 +13,7 @@ nnoremap L gt
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 nnoremap <silent> <leader><Space> @=(foldlevel('.')?'zA':"\<Space>")<CR>
 
-
-" === COC ===
+" --- Coc ---
 
 "Use <c-space>for trigger completion
 inoremap <silent><expr> <c-space> coc#refresh()
