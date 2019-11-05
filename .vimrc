@@ -1,12 +1,12 @@
-filetype on
+set nocompatible
 syntax on
 set number
 set ruler
 set cursorline
 set autoindent
 set smartindent
+colorscheme mahalo
 set mouse=a
-colorscheme desert
 
 " --- Tab ---
 set tabstop=4
@@ -34,12 +34,3 @@ set statusline+=%y
 set statusline+=%8l,%c
 set statusline+=%8p%%
 set statusline+=\ 
-
-" --- Colors ---
-highlight CursorLine ctermfg=none ctermbg=none cterm=none
-highlight StatusLine ctermfg=White ctermbg=238 cterm=none
-highlight TabLineFill ctermfg=none ctermbg=none cterm=none
-highlight TabLine ctermfg=White ctermbg=238 cterm=none
-highlight TabLineSel ctermfg=238 ctermbg=White	cterm=none
-highlight LineNr ctermfg=238
-highlight clear SignColumn
