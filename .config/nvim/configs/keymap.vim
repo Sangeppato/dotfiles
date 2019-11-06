@@ -13,6 +13,9 @@ nnoremap L gt
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 nnoremap <silent> <leader><Space> @=(foldlevel('.')?'zA':"\<Space>")<CR>
 
+" Exit search highlight in normal mode
+nnoremap <esc> :noh<CR>
+
 " --- Coc ---
 
 "Use <c-space>for trigger completion

@@ -2,17 +2,17 @@
 
 " --- FileType ---
 
-autocmd FileType vim call VimMode()
+"autocmd FileType vim call VimMode()
 autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json call CodeMode()
 autocmd FileType markdown call MdMode()
 
 function! VimMode()
-	set list
+	"set list
 endfunction
 
 function! CodeMode()
 	set signcolumn=yes
-	set list
+	"set list
 	call AutoClose()
 endfunction 
 
@@ -27,14 +27,14 @@ endfunction
 function! AutoClose() 
 	inoremap        (  ()<Left>
 	inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
-	
+
 	inoremap        [  []<Left>
 	inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
-	
+
 	inoremap        {  {}<Left>
-	inoremap        {<CR>  {<CR>}<Esc>O
 	inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
-	
+	inoremap        {<CR>  {<CR>}<Esc>O
+
 	"inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
 	"inoremap <expr> ` strpart(getline('.'), col('.')-1, 1) == "\`" ? "\<Right>" : "\`\`\<Left>"
 	"inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"

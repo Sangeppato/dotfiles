@@ -20,4 +20,7 @@ set foldmethod=syntax
 set foldlevel=99
 
 " --- Indent Lines ---
-set listchars=tab:\|\ 
+"set listchars=tab:\|\ 
+
+" --- System Clipboard ---
+set clipboard=unnamed
