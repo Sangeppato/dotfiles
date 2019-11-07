@@ -2,8 +2,9 @@ autoload -U colors && colors
 
 # === COMPLETION ===
 autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
 # case insensitive path-completion
-zstyle ':completion:*' menu select matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+#zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 # === HISTORY NAVIGATION ===
 autoload -U up-line-or-beginning-search
@@ -46,7 +47,7 @@ setopt PROMPT_SUBST
 PROMPT='%F{yellow}%~%f${vcs_info_msg_0_} %F{blue}%#%f '
 
 #macOS colorized 'ls'
-export CLICOLOR=YES
+#export CLICOLOR=YES
 
 # === ALIAS ===
 #linuxS colorized 'ls'
