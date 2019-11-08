@@ -1,8 +1,6 @@
 " === GENERAL ===
 
 syntax on
-set termguicolors
-set noshowmode
 set number
 set autoindent
 set smartindent
@@ -19,8 +17,20 @@ set shiftwidth=4
 set foldmethod=syntax
 set foldlevel=99
 
+" --- System Clipboard ---
+set clipboard=unnamed
+
+" --- Italic for Terminal.app ---
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+
 " --- Indent Lines ---
 "set listchars=tab:\|\ 
 
-" --- System Clipboard ---
-set clipboard=unnamed
+" --- Status Line ---
+" set statusline=\ %F
+" set statusline+=\ %r%m
+" set statusline+=%=
+" set statusline+=%y
+" set statusline+=%8p%%
+" set statusline+=%8l,%c\ 

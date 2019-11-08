@@ -1,16 +1,22 @@
-" === PLUGINS ===
+" === PLUGINS and COLORSCHEMES ===
+
+" --- Dim ---
+set background=dark
+colorscheme dim
 
 " --- Gruvbox ---
-set background=dark
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_sign_column='bg0'
-let g:gruvbox_italic=1
-let g:gruvbox_italicize_strings=1
-colorscheme gruvbox
+" set termguicolors
+" set background=dark
+" let g:gruvbox_contrast_dark = 'hard'
+" let g:gruvbox_sign_column='bg0'
+" let g:gruvbox_italic=1
+" let g:gruvbox_italicize_strings=1
+" colorscheme gruvbox
 
 " --- Lightline ---
+set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'dim',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
