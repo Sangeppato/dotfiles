@@ -26,6 +26,11 @@ let g:lightline = {
       \ },
       \ }
 
+" --- GitGutter ---
+"highlight GitGutterAdd        ctermfg=2
+"highlight GitGutterChange     ctermfg=3
+"highlight GitGutterDelete     ctermfg=1
+
 " --- Coc ---
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
