@@ -16,7 +16,7 @@ colorscheme mahalo
 " --- Lightline ---
 set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'dim',
+      \ 'colorscheme': 'mahalo',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
