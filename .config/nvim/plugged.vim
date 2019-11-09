@@ -2,7 +2,7 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'morhetz/gruvbox'
-Plug 'Sangeppato/vim-dim'
+Plug 'Sangeppato/vim-mahalo'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'

@@ -11,7 +11,7 @@
 
 " --- Dim ---
 set background=dark
-colorscheme dim
+colorscheme mahalo
 
 " --- Lightline ---
 set noshowmode
