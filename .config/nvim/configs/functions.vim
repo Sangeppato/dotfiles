@@ -7,12 +7,12 @@ autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json call CodeM
 autocmd FileType markdown call MdMode()
 
 function! VimMode()
-	"set list
+	set list
 endfunction
 
 function! CodeMode()
 	set signcolumn=yes
-	"set list
+	set list
 	call AutoClose()
 endfunction 
 

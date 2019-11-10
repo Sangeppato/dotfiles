@@ -42,3 +42,5 @@ function! s:check_back_space() abort
 endfunction
 
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm(): "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
