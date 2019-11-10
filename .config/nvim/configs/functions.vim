@@ -22,7 +22,7 @@ endfunction
 
 " --- AutoClose ---
 
-" Automatically appen closing characters for   (,[,{,<,',",`
+" Automatically appen closing characters for   (,[,{,>
 " credit: http://vim.wikia.com/wiki/Automatically_append_closing_characters
 function! AutoClose() 
 	inoremap        (  ()<Left>
@@ -35,7 +35,5 @@ function! AutoClose()
 	inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 	inoremap        {<CR>  {<CR>}<Esc>O
 
-	"inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
-	"inoremap <expr> ` strpart(getline('.'), col('.')-1, 1) == "\`" ? "\<Right>" : "\`\`\<Left>"
-	"inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"
+	inoremap <expr> >  strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
 endfunction
