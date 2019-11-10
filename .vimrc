@@ -6,6 +6,7 @@ set cursorline
 set autoindent
 set smartindent
 set hlsearch
+colorscheme mahalo
 set mouse=a
 
 " --- Tab ---
@@ -31,19 +32,6 @@ set statusline+=%y
 set statusline+=%8p%%
 set statusline+=%8l,%c\ 
 
-
-" --- Colors ---
-colorscheme desert
-hi modeMsg cterm=bold
-hi CursorLine cterm=none
-hi LineNr ctermfg=236
-hi CursorLineNr ctermfg=3
-hi Search ctermfg=15 ctermbg=3
-hi TabLine cterm=none
-hi clear SignColumn
-hi Comment cterm=italic
-hi String cterm=italic
-
-" Italic for Terminal.app
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
+" --- Italic for Terminal.app ---
+" let &t_ZH="\e[3m"
+" let &t_ZR="\e[23m"
