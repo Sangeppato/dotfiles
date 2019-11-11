@@ -17,15 +17,15 @@ set shiftwidth=4
 set foldmethod=syntax
 set foldlevel=99
 
+" --- Indent Lines ---
+set listchars=tab:\|\ 
+
 " --- System Clipboard ---
 set clipboard=unnamed
 
 " --- Italic for Terminal.app ---
 " let &t_ZH="\e[3m"
 " let &t_ZR="\e[23m"
-
-" --- Indent Lines ---
-"set listchars=tab:\|\ 
 
 " --- Status Line ---
 " set statusline=\ %F

@@ -2,9 +2,9 @@
 
 " --- FileType ---
 
-"autocmd FileType vim call VimMode()
+" autocmd FileType vim call VimMode()
 autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json call CodeMode()
-autocmd FileType markdown call MdMode()
+" autocmd FileType markdown call MdMode()
 
 function! VimMode()
 	set list
@@ -13,7 +13,7 @@ endfunction
 function! CodeMode()
 	set signcolumn=yes
 	set list
-	call AutoClose()
+	" call AutoClose()
 endfunction 
 
 function! MdMode()
