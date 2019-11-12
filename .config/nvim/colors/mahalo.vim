@@ -100,7 +100,7 @@ hi Identifier      ctermfg=4       ctermbg=none    cterm=none
 hi Statement       ctermfg=1       ctermbg=none    cterm=none
 " hi Conditional     ctermfg=none    ctermbg=none    cterm=none
 " hi Repeat          ctermfg=none    ctermbg=none    cterm=none
-hi Label           ctermfg=6       ctermbg=none    cterm=none
+" hi Label           ctermfg=6       ctermbg=none    cterm=none
 " hi Operator        ctermfg=none    ctermbg=none    cterm=none
 " hi Keyword         ctermfg=4       ctermbg=none    cterm=none
 " hi Exception       ctermfg=none    ctermbg=none    cterm=none
@@ -116,7 +116,7 @@ hi Special         ctermfg=5       ctermbg=none    cterm=italic
 " ----------
 " - C like -
 " ----------
-hi PreProc         ctermfg=1       ctermbg=none    cterm=none
+hi PreProc         ctermfg=6       ctermbg=none    cterm=none
 " hi Include         ctermfg=none    ctermbg=none    cterm=none
 " hi Define          ctermfg=none    ctermbg=none    cterm=none
 " hi Macro           ctermfg=none    ctermbg=none    cterm=none
@@ -125,7 +125,7 @@ hi PreProc         ctermfg=1       ctermbg=none    cterm=none
 hi Type            ctermfg=3       ctermbg=none    cterm=none
 hi StorageClass    ctermfg=6       ctermbg=none    cterm=none
 " hi Structure       ctermfg=none    ctermbg=none    cterm=none
-hi Typedef         ctermfg=6       ctermbg=none    cterm=none
+hi Typedef         ctermfg=9       ctermbg=none    cterm=none
 
 " --------------------------------
 " Diff
@@ -154,9 +154,8 @@ hi SpellRare       ctermfg=none    ctermbg=5       cterm=none
 "--------------------------------------------------------------------
 " Specific settings                                                 |
 "--------------------------------------------------------------------
-"
 " Vim
-hi link vimHiAttrib Identifier
-hi link vimEnvvar Identifier
-hi link vimCommentTitle Label
-hi link vimOption Label
+" hi link vimHiAttrib Identifier
+" hi link vimEnvvar Identifier
+" hi link vimCommentTitle Label
+" hi link vimOption Label
