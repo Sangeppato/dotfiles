@@ -123,9 +123,9 @@ hi PreProc         ctermfg=6       ctermbg=none    cterm=none
 " hi PreCondit       ctermfg=none    ctermbg=none    cterm=none
 
 hi Type            ctermfg=3       ctermbg=none    cterm=none
-hi StorageClass    ctermfg=6       ctermbg=none    cterm=none
+" hi StorageClass    ctermfg=6       ctermbg=none    cterm=none
 " hi Structure       ctermfg=none    ctermbg=none    cterm=none
-hi Typedef         ctermfg=9       ctermbg=none    cterm=none
+" hi Typedef         ctermfg=9       ctermbg=none    cterm=none
 
 " --------------------------------
 " Diff
