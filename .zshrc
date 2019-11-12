@@ -50,7 +50,7 @@ PROMPT='%F{yellow}%~%f${vcs_info_msg_0_} %F{blue}%#%f '
 #export CLICOLOR=YES
 
 # === ALIAS ===
-#linuxS colorized 'ls'
+#linux colorized 'ls'
 #alias ls='ls --color'
 alias ll='ls -l'
 alias ..='cd ..'
