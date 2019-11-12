@@ -1,8 +1,8 @@
 " === VIM-PLUG ===  
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
+Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
