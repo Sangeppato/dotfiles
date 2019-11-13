@@ -91,7 +91,7 @@ hi String          ctermfg=2       ctermbg=none    cterm=italic
 " hi Boolean         ctermfg=none    ctermbg=none    cterm=none
 " hi Float           ctermfg=none    ctermbg=none    cterm=none
 
-hi Identifier      ctermfg=4       ctermbg=none    cterm=none
+hi Identifier      ctermfg=6       ctermbg=none    cterm=none
 " hi Function        ctermfg=none    ctermbg=none    cterm=none
 
 " --------------------------------
@@ -116,7 +116,7 @@ hi Special         ctermfg=5       ctermbg=none    cterm=italic
 " ----------
 " - C like -
 " ----------
-hi PreProc         ctermfg=6       ctermbg=none    cterm=none
+hi PreProc         ctermfg=4       ctermbg=none    cterm=none
 " hi Include         ctermfg=none    ctermbg=none    cterm=none
 " hi Define          ctermfg=none    ctermbg=none    cterm=none
 " hi Macro           ctermfg=none    ctermbg=none    cterm=none
