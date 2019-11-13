@@ -159,3 +159,8 @@ hi SpellRare       ctermfg=none    ctermbg=5       cterm=none
 " hi link vimEnvvar Identifier
 " hi link vimCommentTitle Label
 " hi link vimOption Label
+"
+" GitGutter
+highlight GitGutterAdd        ctermfg=2
+highlight GitGutterChange     ctermfg=3
+highlight GitGutterDelete     ctermfg=1
