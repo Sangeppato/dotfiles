@@ -1,5 +1,9 @@
 " === PLUGINS and COLORSCHEMES ===
 
+" --- Srcery ---
+let g:srcery_italic = 1
+colorscheme srcery
+
 " --- Gruvbox ---
 " set termguicolors
 " set background=dark
@@ -10,13 +14,13 @@
 " colorscheme gruvbox
 
 " --- Mahalo ---
-set background=dark
-colorscheme mahalo
+" set background=dark
+" colorscheme mahalo
 
 " --- Lightline ---
 set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'mahalo',
+      \ 'colorscheme': 'srcery',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'readonly', 'filename', 'modified', 'gitbranch', 'cocstatus' ] ]

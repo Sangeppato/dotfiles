@@ -2,10 +2,11 @@
 
 syntax on
 set number
-set autoindent
-set smartindent
 set cursorline
+set autoindent
+filetype plugin indent on
 set hidden
+set lazyredraw
 set mouse=a
 
 " --- Tab ---
