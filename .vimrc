@@ -4,10 +4,11 @@ set number
 set ruler
 set cursorline
 set autoindent
-set smartindent
+filetype plugin indent on
 set hlsearch
-colorscheme mahalo
-set mouse=a
+set hidden
+set mouse+=a
+colorscheme srcery
 
 " --- Tab ---
 set tabstop=4
@@ -33,5 +34,5 @@ set statusline+=%8p%%
 set statusline+=%8l,%c\ 
 
 " --- Italic for Terminal.app ---
-" let &t_ZH="\e[3m"
-" let &t_ZR="\e[23m"
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
