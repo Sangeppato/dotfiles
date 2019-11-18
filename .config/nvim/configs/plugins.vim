@@ -50,4 +50,4 @@ function! CocGit() abort
 endfunction
 
 " Extensions
-let g:coc_global_extensions = ['coc-pairs', 'coc-git', 'coc-json', 'coc-vimlsp', 'coc-python', 'coc-markdownlint']
+let g:coc_global_extensions = ['coc-git', 'coc-explorer', 'coc-pairs', 'coc-json', 'coc-vimlsp', 'coc-python', 'coc-markdownlint']

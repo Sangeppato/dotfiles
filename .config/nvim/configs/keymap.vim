@@ -38,3 +38,6 @@ nmap <silent> gr <Plug>(coc-references)
 "Remap for rename current word    
 nmap <silent> rn <Plug>(coc-rename)
 nmap <silent> <F2> <Plug>(coc-rename)
+
+"Coc-explorer
+nmap <leader>e :CocCommand explorer<CR>
