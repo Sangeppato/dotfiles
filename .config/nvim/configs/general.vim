@@ -7,7 +7,8 @@ set autoindent
 filetype plugin indent on
 set hidden
 set lazyredraw
-set mouse=a
+set mouse+=a
+set signcolumn=yes
 
 " --- Tab ---
 set tabstop=4
@@ -20,6 +21,7 @@ set foldlevel=99
 
 " --- Indent Lines ---
 set listchars=tab:\|\ 
+autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json set list
 
 " --- System Clipboard ---
 set clipboard=unnamed

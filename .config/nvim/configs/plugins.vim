@@ -26,7 +26,7 @@ let g:lightline = {
       \             [ 'readonly', 'filename', 'modified', 'gitbranch', 'cocstatus' ] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
+      \   'gitbranch': 'CocGit',
       \   'cocstatus': 'coc#status'
       \ },
       \ }
@@ -43,3 +43,11 @@ endfunction
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm(): "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Git Status
+function! CocGit() abort
+	return get(g:, 'coc_git_status', '')
+endfunction
+
+" Extensions
+let g:coc_global_extensions = ['coc-pairs', 'coc-git', 'coc-json', 'coc-vimlsp', 'coc-python', 'coc-markdownlint']
