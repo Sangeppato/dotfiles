@@ -2,8 +2,10 @@
 
 let mapleader=","
 
+nnoremap \ :
+
 nnoremap <leader>l :set relativenumber!<CR>
-noremap <silent> <F5> :set list!<CR>
+nnoremap <leader>i :set list!<CR>
 
 " Tabs
 nnoremap H gT
@@ -15,6 +17,9 @@ nnoremap <silent> <leader><Space> @=(foldlevel('.')?'zA':"\<Space>")<CR>
 
 " Exit search highlight in normal mode
 nnoremap <esc> :noh<CR><esc>
+
+" Split
+nnoremap <leader>v :vsplit<CR>
 
 " --- Coc ---
 
