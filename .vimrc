@@ -34,5 +34,5 @@ set statusline+=%8p%%
 set statusline+=%8l,%c\ 
 
 " --- Italic for Terminal.app ---
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
+" let &t_ZH="\e[3m"
+" let &t_ZR="\e[23m"
