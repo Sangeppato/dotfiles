@@ -1,5 +1,5 @@
 runtime plugged.vim
-runtime configs/general.vim
-runtime configs/keymap.vim
-runtime configs/plugins.vim
-" runtime configs/functions.vim
+runtime general.vim
+runtime keymap.vim
+runtime plugins.vim
+" runtime functions.vim
