@@ -8,7 +8,10 @@ filetype plugin indent on
 set hlsearch
 set hidden
 set mouse+=a
-colorscheme srcery
+
+" colorscheme srcery
+colorscheme default
+set background=dark
 
 " --- Tab ---
 set tabstop=4
