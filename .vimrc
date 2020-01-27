@@ -10,8 +10,6 @@ set hidden
 set mouse+=a
 
 " colorscheme srcery
-colorscheme default
-set background=dark
 
 " --- Tab ---
 set tabstop=4

@@ -4,15 +4,17 @@ autoload -U colors && colors
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 # case insensitive path-completion
-#zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 # === HISTORY NAVIGATION ===
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
+# bindkey "^[[A" up-line-or-beginning-search # Up
+# bindkey "^[[B" down-line-or-beginning-search # Down
+# bindkey "$key[Up]" up-line-or-beginning-search # Up
+# bindkey "$key[Down]" down-line-or-beginning-search # Down
 
 # === HISTORY ===
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
@@ -46,12 +48,12 @@ setopt PROMPT_SUBST
 # Replace '%#' with '%(!.#.>)' to have the '>' character
 PROMPT='%F{yellow}%~%f${vcs_info_msg_0_} %F{blue}%#%f '
 
-#macOS colorized 'ls'
-#export CLICOLOR=YES
+# macOS colorized 'ls'
+# export CLICOLOR=YES
 
 # === ALIAS ===
-#linux colorized 'ls'
-#alias ls='ls --color'
+# Linux colorized 'ls'
+# alias ls='ls --color'
 alias ll='ls -l'
 alias ..='cd ..'
 alias grep='grep --color'
