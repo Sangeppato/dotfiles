@@ -23,7 +23,7 @@ if [ "$(uname | grep -i darwin)" != "" ] ; then
 		echo "Checking $pkg..."
 		brew info $pkg | grep -i poured &> /dev/null
 		if [ $? != 0 ] ; then
-			"$pkg missing, installing..."
+			echo "$pkg missing, installing..."
 			brew install $pkg
 			if [ $? != 0 ] ; then
 				echo "Error installing $pkg, aborting..."
@@ -37,7 +37,7 @@ elif [ "$(uname | grep -i linux)" != "" ] ; then
 		echo "Checking $pkg..."
 		dpkg -s $pkg &> /dev/null
 		if [ $? != 0 ] ; then
-			"$pkg missing, installing..."
+			echo "$pkg missing, installing..."
 			sudo apt-get install $pkg
 			if [ $? != 0 ] ; then
 				echo "Error installing $pkg, aborting..."
