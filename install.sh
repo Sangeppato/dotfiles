@@ -14,15 +14,15 @@ cp -r .vim $HOME/
 echo -e "\nChecking packages..."
 if [ "$(uname | grep -i darwin)" != "" ] ; then
 	echo "macOS detected"
-	brew &> /dev/null
+	brew help &> /dev/null
 	if [ $? != 0 ] ; then
 		echo "Homebrew not installed, aborting..."
 		exit 1
 	fi
-	for pkg in neovim nodejs yarn; do
+	for pkg in neovim nodejs yarn ; do
 		echo "Checking $pkg..."
-		brew info $pkg | grep -i poured &> /dev/null
-		if [ $? != 0 ] ; then
+		brew info $pkg | grep -i "not installed" &> /dev/null
+		if [ $? == 0 ] ; then
 			echo "$pkg missing, installing..."
 			brew install $pkg
 			if [ $? != 0 ] ; then

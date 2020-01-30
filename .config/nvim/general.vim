@@ -8,7 +8,7 @@ filetype plugin indent on
 set hidden
 set lazyredraw
 set mouse+=a
-set signcolumn=yes
+" set signcolumn=yes
 
 " --- Tab ---
 set tabstop=4
@@ -20,11 +20,11 @@ set foldmethod=syntax
 set foldlevel=99
 
 " --- Indent Lines ---
-set listchars=tab:\|\ 
-autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json set list
+" set listchars=tab:\|\ 
+" autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json set list
 
 " --- System Clipboard ---
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " --- Italic for Terminal.app ---
 " let &t_ZH="\e[3m"
