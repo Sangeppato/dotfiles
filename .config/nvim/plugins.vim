@@ -4,15 +4,6 @@
 let g:srcery_italic = 1
 colorscheme srcery
 
-" --- Gruvbox ---
-" set termguicolors
-" set background=dark
-" let g:gruvbox_contrast_dark = 'hard'
-" let g:gruvbox_sign_column='bg0'
-" let g:gruvbox_italic=1
-" let g:gruvbox_italicize_strings=1
-" colorscheme gruvbox
-
 " --- Mahalo ---
 " set background=dark
 " colorscheme mahalo
@@ -40,7 +31,7 @@ set rtp+=/usr/local/opt/fzf
 " Extensions
 let g:coc_global_extensions = ['coc-git', 'coc-explorer', 'coc-pairs', 'coc-json', 'coc-vimlsp', 'coc-python', 'coc-markdownlint']
 
-"Coc-explorer
+" Coc-explorer
 nmap <leader>e :CocCommand explorer<CR>
 
 " Git Status
