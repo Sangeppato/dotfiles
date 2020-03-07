@@ -9,3 +9,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 call plug#end()
+
+runtime plugins.vim

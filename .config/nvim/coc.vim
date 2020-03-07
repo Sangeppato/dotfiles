@@ -1,48 +1,5 @@
-" === PLUGINS and COLORSCHEME ===
-
-" --- Srcery ---
-let g:srcery_italic = 1
-colorscheme srcery
-
-" --- Mahalo ---
-" set background=dark
-" colorscheme mahalo
-
-" --- Lightline ---
-set noshowmode
-let g:lightline = {
-      \ 'colorscheme': 'srcery',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified', 'gitbranch', 'cocstatus' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'CocGit',
-      \   'cocstatus': 'coc#status'
-      \ },
-      \ }
-
-" --- Fzf ---
-set rtp+=/usr/local/opt/fzf
-
-
-" === COC ===
-
-" --- PERSONAL ---
-
-" Extensions
-let g:coc_global_extensions = ['coc-git', 'coc-explorer', 'coc-pairs', 'coc-json', 'coc-vimlsp', 'coc-python', 'coc-markdownlint']
-
-" Coc-explorer
-nmap <leader>e :CocCommand explorer<CR>
-
-" Git Status
-function! CocGit() abort
-	return get(g:, 'coc_git_status', '')
-endfunction
-
-" --- REPO ---
-
+" === COC Repo Settings ===
+"
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup

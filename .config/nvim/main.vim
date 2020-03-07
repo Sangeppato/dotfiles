@@ -1,4 +1,4 @@
-" === GENERAL ===
+" === MAIN ===
 
 syntax on
 set number
@@ -24,6 +24,30 @@ autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json set list
 
 " --- System Clipboard ---
 set clipboard=unnamed
+
+
+" === KEYMAP ===
+
+let mapleader=","
+nnoremap \ :
+nnoremap <leader>l :set relativenumber!<CR>
+nnoremap <leader>i :set list!<CR>
+
+" --- Tabs ---
+nnoremap H gT
+nnoremap L gt
+
+" --- Fold ---
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+nnoremap <silent> <leader><Space> @=(foldlevel('.')?'zA':"\<Space>")<CR>
+
+" Exit search highlight in normal mode
+nnoremap <esc> :noh<CR><esc>
+" Split
+nnoremap <leader>v :vsplit<CR>
+
+
+" === Other Stuff ===
 
 " --- Italic for Terminal.app ---
 " let &t_ZH="\e[3m"
