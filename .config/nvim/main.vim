@@ -1,4 +1,6 @@
-" === MAIN ===
+" ==========================
+" ========== MAIN ==========
+" ==========================
 
 syntax on
 set number
@@ -25,8 +27,13 @@ autocmd FileType sh,c,cpp,make,python,java,go,xml,css,javascript,json set list
 " --- System Clipboard ---
 set clipboard=unnamed
 
+" --- Italic for Terminal.app ---
+" let &t_ZH="\e[3m"
+" let &t_ZR="\e[23m"
 
-" === KEYMAP ===
+
+" ============================
+" ========== KEYMAP ==========
 
 let mapleader=","
 nnoremap \ :
@@ -43,17 +50,14 @@ nnoremap <silent> <leader><Space> @=(foldlevel('.')?'zA':"\<Space>")<CR>
 
 " Exit search highlight in normal mode
 nnoremap <esc> :noh<CR><esc>
+
 " Split
 nnoremap <leader>v :vsplit<CR>
 
 
-" === Other Stuff ===
+" ================================
+" ========== STATUSLINE ==========
 
-" --- Italic for Terminal.app ---
-" let &t_ZH="\e[3m"
-" let &t_ZR="\e[23m"
-
-" --- Status Line ---
 " set statusline=\ %F
 " set statusline+=\ %r%m
 " set statusline+=%=

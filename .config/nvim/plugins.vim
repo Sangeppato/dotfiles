@@ -1,14 +1,12 @@
-" === PLUGINS and COLORSCHEME ===
+" =============================
+" ========== PLUGINS ==========
+" =============================
 
-" --- Srcery ---
+" ---------- Srcery ----------
 let g:srcery_italic = 1
 colorscheme srcery
 
-" --- Mahalo ---
-" set background=dark
-" colorscheme mahalo
-
-" --- Lightline ---
+" ---------- Lightline ----------
 set noshowmode
 let g:lightline = {
       \ 'colorscheme': 'srcery',
@@ -22,13 +20,12 @@ let g:lightline = {
       \ },
       \ }
 
-" --- Fzf ---
+" ---------- Fzf ----------
 set rtp+=/usr/local/opt/fzf
 
 
-" === COC ===
-
-" --- PERSONAL ---
+" =========================
+" ========== COC ==========
 
 " Extensions
 let g:coc_global_extensions = ['coc-git', 'coc-explorer', 'coc-pairs', 'coc-json', 'coc-vimlsp', 'coc-python', 'coc-markdownlint']
@@ -41,7 +38,9 @@ function! CocGit() abort
 	return get(g:, 'coc_git_status', '')
 endfunction
 
-" --- REPO ---
+" ---------- Repo ----------
+"
+" Config taken from the Coc.nvim repository
 
 " Some servers have issues with backup files, see #649.
 set nobackup
